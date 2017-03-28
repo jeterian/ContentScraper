@@ -1,6 +1,15 @@
 // Problem: Need a content scraper that takes information from
 // http://shirts4mike.com and puts the information in a CSV File
 
+'use strict';
+
+// initial variables for fs, 3d party npm packages
+const fs = require('fs');
+const scraper = require('x-ray'); // content scraper
+const writeCSV = require('json2csv'); // parses json to csv
+const url = 'http://shirts4mike.com/shirts.php';
+const folder = './data';
+
 // 1. Program scraper to check for folder named 'Data'
 
   // If 'Data' doesn't exist, create it
@@ -30,4 +39,4 @@
 
 // 8. Include package.json with dependencies and npm install should install dependencies
 
-  // EC: edit package.json file so it runs when npm start is run 
+  // EC: edit package.json file so it runs when npm start is run
