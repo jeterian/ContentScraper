@@ -1,0 +1,23 @@
+{
+  "name": "contentscraper",
+  "version": "1.0.0",
+  "description": "Content scraper for shirts4mike.com",
+  "main": "scraper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeterian/ContentScraper.git"
+  },
+  "keywords": [
+    "scraper",
+    "csv"
+  ],
+  "author": "Tamar E. Chalker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeterian/ContentScraper/issues"
+  },
+  "homepage": "https://github.com/jeterian/ContentScraper#readme"
+}
