@@ -6,24 +6,29 @@
 // initial variables for fs, 3d party npm packages
 const fs = require('fs');
 const scraper = require('x-ray'); // content scraper
-const writeCSV = require('json2csv'); // parses json to csv
+const xray = scraper();
+const writeCSV = require('csv-write-stream'); // parses json to csv
+const parse = writeCSV();
+ // for handling the date
+var moment = require('moment');
+moment().format();
 const url = 'http://shirts4mike.com/shirts.php';
 const folder = './data';
+const date = moment().format("YYYY-MM-DD");
 
 // 1. Program scraper to check for folder named 'Data'
+var dataFolder = new Promise(function(resolve, reject) {
 
   // If 'Data' doesn't exist, create it
+  if (!fs.existsSync(folder)) {
+    console.log("Creating Data folder...");
+    fs.mkdirSync(folder);
+    writer.pipe(fs.createWriteStream(folder + date + '.csv'));
+  }
+});
 
-  // Else, do nothing
-
-// 2. Use npm package that scrapes content from a site
-
-// 3. Use npm package that creates CSV file
-
-// 4. use http://shirts4mike.com/shirts.php as single entry point and
-//    scrape infor for eight t-shirts
-
-//5. Retrieve price, title, url and image url from product page and save as CSV
+// 2. Use npm package that scrapes content from a site.  Retrieve price, title,
+//    url and image url from product page and save as CSV
 
   // CSV named for date
 
