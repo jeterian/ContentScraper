@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/jeterian/ContentScraper/issues"
   },
-  "homepage": "https://github.com/jeterian/ContentScraper#readme"
+  "homepage": "https://github.com/jeterian/ContentScraper#readme",
+  "dependencies": {
+    "csv-write-stream": "^2.0.0",
+    "moment": "^2.18.1",
+    "x-ray": "^2.3.2"
+  },
+  "devDependencies": {}
 }
