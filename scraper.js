@@ -51,7 +51,7 @@ x(url, products,  [{
                 object[key].time = now;
             }
 
-            // save csv
+            // 3. parse json and save as csv
             const headings = ['title', 'price', 'imgUrl', 'url', 'time'];
             const csv = json2csv({ data: object, fields: headings});
             console.log(csv);
