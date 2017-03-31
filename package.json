@@ -1,11 +1,16 @@
 {
   "name": "contentscraper",
   "version": "1.0.0",
-  "description": "Content scraper for shirts4mike.com",
+  "description": "Content Scraper for Project 6",
   "main": "scraper.js",
+  "dependencies": {
+    "json2csv": "^3.7.3",
+    "moment": "^2.18.1",
+    "x-ray": "^2.3.2"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node scraper.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -20,11 +25,5 @@
   "bugs": {
     "url": "https://github.com/jeterian/ContentScraper/issues"
   },
-  "homepage": "https://github.com/jeterian/ContentScraper#readme",
-  "dependencies": {
-    "csv-write-stream": "^2.0.0",
-    "moment": "^2.18.1",
-    "x-ray": "^2.3.2"
-  },
-  "devDependencies": {}
+  "homepage": "https://github.com/jeterian/ContentScraper#readme"
 }
